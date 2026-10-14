@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+
+<body>
+    <header>
+        <p>Semantic Form / FMI Demo</p>
+        <h1>Student Registration</h1>
+    </header>
+    <main>
+        <form action="/register" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <ul>
+                    <div>
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" placeholder="Jana Novák" required value="Danny" disabled>
+                    </div>
+                    <div>
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" placeholder="jana@example.com">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" minlength="8" maxlength="25" id="password"
+                            placeholder="Min. 8 characters" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" minlength="8" id="password" placeholder="Min. 8 characters">
+                    </div>
+                </ul>
+            </fieldset>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
